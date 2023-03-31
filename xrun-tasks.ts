@@ -3,9 +3,9 @@ import { loadDevTasks, xrun } from "@xarc/app-dev";
 xrun.updateEnv(
   {
     /**
-     * Configure local development with http://127.0.0.1:3000
+     * Configure local development with http://localhost:3000
      */
-    HOST: "127.0.0.1",
+    HOST: "localhost",
     /**
      * In dev mode, a proxy server listens at `PORT` and forward requests to
      * to actual node.js app server and webpack dev server.

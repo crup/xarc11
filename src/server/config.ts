@@ -4,7 +4,7 @@ import { ConnectionConfig, PluginsConfig, ElectrodeServerConfig } from "@xarc/fa
 // specify connection info for fastify server
 //
 const connection: ConnectionConfig = {
-  host: process.env.HOST || "127.0.0.1",
+  host: process.env.HOST || "localhost",
   // The env APP_SERVER_PORT allows Electrode X to control app's listening port during dev
   // to serve both static assets and app under a unified proxy port
   port: parseInt(process.env.APP_SERVER_PORT || process.env.PORT || "3000"),
